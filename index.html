@@ -716,13 +716,11 @@ footer {
 }
 
 .reveal {
-  opacity: 0; transform: translateY(20px);
+  opacity: 1; transform: translateY(0);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
-.reveal.visible { opacity: 1; transform: none; }
-
-/* Fallback for environments where IntersectionObserver doesn't fire */
-@media print { .reveal { opacity: 1; transform: none; } }
+.reveal.animate { opacity: 0; transform: translateY(20px); }
+.reveal.animate.visible { opacity: 1; transform: none; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
@@ -813,7 +811,7 @@ footer {
     <h2 class="section-title" style="color:white">The 1%… the 9%…<br><em style="color:var(--gold)">and the 90%</em></h2>
     <p class="section-lead" style="color:rgba(255,255,255,0.55)">Every major university is racing to respond to AI. Most are doing it the same way — investing in the 1% building new models and the 9% designing transformation strategy. But the real AI innovation won't happen in the lab or the strategy deck. It will happen in the 90% — and this faculty-driven, university-wide initiative is built to enable it.</p>
 
-    <div class="ninety-grid reveal">
+    <div class="ninety-grid reveal visible">
       <div class="ninety-card">
         <div class="ninety-pct">1%</div>
         <h3>The Builders</h3>
@@ -832,7 +830,7 @@ footer {
     </div>
 
     <!-- MASSIVELY PARALLEL INNOVATION -->
-    <div class="reveal" style="margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+    <div class="reveal visible" style="margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
       <div>
         <div class="eyebrow" style="color:rgba(255,204,0,0.7); margin-bottom: 16px;">
           <span style="background:rgba(255,204,0,0.5);width:24px;height:2px;display:block"></span>
@@ -868,7 +866,7 @@ footer {
     <h2 class="section-title">Built for <em>Every</em> Major</h2>
     <p class="section-lead">Built collaboratively by faculty across USC schools — a modular curriculum any department can adopt. From foundational AI fluency to domain-specific applied courses. No prerequisites. No coding required.</p>
 
-    <div class="curriculum-tracks reveal">
+    <div class="curriculum-tracks reveal visible">
 
       <!-- Foundational -->
       <div class="track-block">
@@ -957,7 +955,7 @@ footer {
     <h2 class="section-title">Spring 2026</h2>
     <p class="section-lead">From faculty panels to student showcases to professional bootcamps — the initiative is building community around applied AI at USC.</p>
 
-    <div class="events-grid reveal">
+    <div class="events-grid reveal visible">
 
       <div class="event-card">
         <div class="event-card-top">
@@ -967,7 +965,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">USC University Club</span>
-          <a href="/cdn-cgi/l/email-protection#731e1a18161f1616330600105d161706" class="event-link">RSVP →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">RSVP →</a>
         </div>
       </div>
 
@@ -979,7 +977,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">University Park Campus · TBD</span>
-          <a href="/cdn-cgi/l/email-protection#b7dadedcd2dbd2d2f7c2c4d499d2d3c2" class="event-link">Learn More →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">Learn More →</a>
         </div>
       </div>
 
@@ -991,7 +989,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">The Scriptorium, USC University Club</span>
-          <a href="/cdn-cgi/l/email-protection#0e6367656b626b6b4e7b7d6d206b6a7b" class="event-link">Register →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">Register →</a>
         </div>
       </div>
 
@@ -1002,12 +1000,12 @@ footer {
 <!-- USC AI CUP -->
 <section class="cup-section">
   <div class="cup-inner">
-    <div class="cup-content reveal">
+    <div class="cup-content reveal visible">
       <div class="eyebrow">USC AI Cup</div>
       <h2>Every Semester.<br>Every School.<br>Every Discipline.</h2>
       <p>The USC AI Cup is a university-wide competition celebrating the most innovative student-built AI projects at USC. Held every semester, it highlights the applied AI innovation happening across every field — not just engineering.</p>
     </div>
-    <div class="cup-prizes reveal">
+    <div class="cup-prizes reveal visible">
       <div class="prize-card">
         <div class="prize-medal">🏆</div>
         <div class="prize-info">
@@ -1040,7 +1038,7 @@ footer {
     <h2 class="section-title" style="color:white">Beyond the Classroom</h2>
     <p class="section-lead" style="color:rgba(255,255,255,0.5)">The initiative extends into graduate and professional education — creating new revenue pathways for USC schools and a continuous upskilling pipeline for industry.</p>
 
-    <div class="profedu-grid reveal">
+    <div class="profedu-grid reveal visible">
       <div class="profedu-card">
         <div class="profedu-icon">🎓</div>
         <h3>Graduate Extensions</h3>
@@ -1072,7 +1070,7 @@ footer {
     <h2 class="section-title">Faculty <em>Leading</em> the Way</h2>
     <p class="section-lead">Eight founding faculty from Viterbi, Marshall, and the School of Cinematic Arts — who came together across departments and disciplines to build this initiative from the ground up. No top-down mandate. Just faculty who saw the need and acted.</p>
 
-    <div class="team-grid reveal">
+    <div class="team-grid reveal visible">
       <div class="team-card">
         <div class="team-initial">ML</div>
         <div class="team-name">Mike Lee</div>
@@ -1132,8 +1130,8 @@ footer {
   </div>
   <h2>Join the <em>Initiative</em></h2>
   <p>The real AI innovation will happen in the 90%. And USC is the university that will lead it. Whether you're a student, faculty member, industry partner, or executive — there's a place for you.</p>
-  <a href="/cdn-cgi/l/email-protection#761b1f1d131a13133603051558131203" class="cta-btn">Contact Mike Lee</a>
-  <p class="cta-sub">Or email directly: <a href="/cdn-cgi/l/email-protection#e78a8e8c828b8282a7929484c9828392"><span class="__cf_email__" data-cfemail="395450525c555c5c794c4a5a175c5d4c">[email&#160;protected]</span></a></p>
+  <a href="mailto:mikelee@usc.edu" class="cta-btn">Contact Mike Lee</a>
+  <p class="cta-sub">Or email directly: <a href="mailto:mikelee@usc.edu">mikelee@usc.edu</a></p>
 </section>
 
 <!-- FOOTER -->
@@ -1144,12 +1142,11 @@ footer {
     <li><a href="#curriculum">Curriculum</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#team">Team</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#d5b8bcbeb0b9b0b095a0a6b6fbb0b1a0">Contact</a></li>
+    <li><a href="mailto:mikelee@usc.edu">Contact</a></li>
   </ul>
   <div class="footer-url"><strong>workforce.usc.edu</strong> · USC Viterbi School of Engineering · TAC Program &nbsp;·&nbsp; <a href="https://uscprofessor.github.io/aiworkforce/#" target="_blank" style="color:var(--gold);text-decoration:none;">Initial Draft ↗</a></div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
