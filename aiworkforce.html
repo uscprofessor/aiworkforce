@@ -721,6 +721,9 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: none; }
 
+/* Fallback for environments where IntersectionObserver doesn't fire */
+@media print { .reveal { opacity: 1; transform: none; } }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 0 24px; }
@@ -934,7 +937,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">USC University Club</span>
-          <a href="/cdn-cgi/l/email-protection#9ff2f6f4faf3fafadfeaecfcb1fafbea" class="event-link">RSVP →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">RSVP →</a>
         </div>
       </div>
 
@@ -946,7 +949,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">University Park Campus · TBD</span>
-          <a href="/cdn-cgi/l/email-protection#f4999d9f91989191b4818797da919081" class="event-link">Learn More →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">Learn More →</a>
         </div>
       </div>
 
@@ -958,7 +961,7 @@ footer {
         </div>
         <div class="event-card-bottom">
           <span class="event-meta">The Scriptorium, USC University Club</span>
-          <a href="/cdn-cgi/l/email-protection#a6cbcfcdc3cac3c3e6d3d5c588c3c2d3" class="event-link">Register →</a>
+          <a href="mailto:mikelee@usc.edu" class="event-link">Register →</a>
         </div>
       </div>
 
@@ -1043,50 +1046,50 @@ footer {
       <div class="team-card">
         <div class="team-initial">ML</div>
         <div class="team-name">Mike Lee</div>
-        <div class="team-school">Viterbi · TAC</div>
-        <div class="team-role">Lead Faculty. Senior Lecturer, Digital Entrepreneurship & Applied Computing. Founder, AI Workforce of the Future Initiative.</div>
+        <div class="team-school">Viterbi · TAC — Lead Faculty</div>
+        <div class="team-role">Senior Lecturer, Digital Entrepreneurship & Applied Computing. Designs applied AI curriculum at the intersection of engineering, entrepreneurship, and innovation, with deep experience building cross-school programs and global student innovation platforms.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">GP</div>
         <div class="team-name">Greg Patton</div>
-        <div class="team-school">Marshall</div>
-        <div class="team-role">Professor of Clinical Business Communication. Global & Graduate AI Leadership Programs.</div>
+        <div class="team-school">Marshall School of Business</div>
+        <div class="team-role">Professor of Clinical Business Communication. Brings expertise in leadership, communication, and organizational effectiveness. Leads transformative global AI and leadership programs focused on how intelligent systems reshape teams, culture, and decision-making.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">EC</div>
         <div class="team-name">Eric Chow</div>
-        <div class="team-school">Marshall</div>
-        <div class="team-role">Workforce & professional education perspective. Global AI career and executive development programs.</div>
+        <div class="team-school">Marshall School of Business</div>
+        <div class="team-role">Adds a workforce and professional education perspective shaped by leadership of global AI, career, and executive development programs. Connects curriculum to emerging job roles, industry demand, and scalable professional education.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">NK</div>
         <div class="team-name">Nitin Kale</div>
-        <div class="team-school">Viterbi</div>
-        <div class="team-role">Professor of Engineering Practice. Enterprise systems, applied analytics, and AI-enabled organizational systems.</div>
+        <div class="team-school">Viterbi School of Engineering</div>
+        <div class="team-role">Professor of Engineering Practice. Contributes expertise in enterprise systems, applied analytics, and AI-enabled organizational systems. Strengthens the initiative's focus on scalable architectures, industry-aligned learning, and responsible deployment.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">NF</div>
         <div class="team-name">Nancy Forner</div>
-        <div class="team-school">Cinematic Arts</div>
-        <div class="team-role">Professor of Cinema Practice. AI for picture & sound editing. Creator of CTPR 499 — our first domain-specific course.</div>
+        <div class="team-school">School of Cinematic Arts</div>
+        <div class="team-role">Professor of Cinema Practice. Brings a cinematic and creative AI perspective grounded in professional practice. Integrates AI into picture and sound editing workflows, reframing AI tools as creative collaborators in media and entertainment. Creator of CTPR 499.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">LG</div>
         <div class="team-name">Lauren Giordano</div>
-        <div class="team-school">Cinematic Arts</div>
-        <div class="team-role">Adjunct Faculty. Applied experience at the intersection of creative practice, technology, and interdisciplinary teaching.</div>
+        <div class="team-school">School of Cinematic Arts</div>
+        <div class="team-role">Adjunct Faculty. Contributes applied experience at the intersection of creative practice, technology, and interdisciplinary teaching. Supports hands-on, project-based learning in rapidly evolving creative AI environments.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">EC</div>
         <div class="team-name">Eric Chung</div>
         <div class="team-school">Viterbi · Marshall</div>
-        <div class="team-role">Adjunct Professor TAC; Managing Director, VanEck Digital Assets Initiative. Blockchain, digital assets, enterprise innovation.</div>
+        <div class="team-role">Adjunct Professor, TAC (Viterbi); Managing Director, VanEck Digital Assets Initiative (Marshall). Brings deep expertise in blockchain, digital assets, and emerging technology entrepreneurship. Co-created USC's Blockchain Minor.</div>
       </div>
       <div class="team-card">
         <div class="team-initial">JV</div>
         <div class="team-name">Jeanette Villanueva Padilla</div>
-        <div class="team-school">Marshall</div>
-        <div class="team-role">Global Partnerships. Doctoral research on AI and student learning. Focus on pedagogy, inclusion, and real AI fluency.</div>
+        <div class="team-school">Marshall School of Business</div>
+        <div class="team-role">Global Partnerships. Adds a research-driven, student-centered perspective grounded in her doctoral dissertation on AI and student learning. Strengthens the initiative's focus on pedagogy, inclusion, and how students build real AI fluency.</div>
       </div>
     </div>
   </div>
@@ -1099,8 +1102,8 @@ footer {
   </div>
   <h2>Join the <em>Initiative</em></h2>
   <p>Whether you're a student, faculty member, industry partner, or executive — there's a place for you in the USC AI Workforce of the Future.</p>
-  <a href="/cdn-cgi/l/email-protection#533e3a38363f3636132620307d363726" class="cta-btn">Contact Mike Lee</a>
-  <p class="cta-sub">Or email directly: <a href="/cdn-cgi/l/email-protection#9bf6f2f0fef7fefedbeee8f8b5feffee"><span class="__cf_email__" data-cfemail="25484c4e40494040655056460b404150">[email&#160;protected]</span></a></p>
+  <a href="mailto:mikelee@usc.edu" class="cta-btn">Contact Mike Lee</a>
+  <p class="cta-sub">Or email directly: <a href="mailto:mikelee@usc.edu">mikelee@usc.edu</a></p>
 </section>
 
 <!-- FOOTER -->
@@ -1111,10 +1114,26 @@ footer {
     <li><a href="#curriculum">Curriculum</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#team">Team</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#9ef3f7f5fbf2fbfbdeebedfdb0fbfaeb">Contact</a></li>
+    <li><a href="mailto:mikelee@usc.edu">Contact</a></li>
   </ul>
   <div class="footer-url"><strong>workforce.usc.edu</strong> · USC Viterbi School of Engineering · TAC Program</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Scrol
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Fallback: show all reveals after 2 seconds in case IntersectionObserver fails
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }, 2000);
+</script>
